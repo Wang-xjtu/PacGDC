@@ -1,7 +1,6 @@
 import os
 
-# os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3,4,5"  # gpus
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"  # gpus
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3,4,5"  # gpus
 
 from src.body.train_body import PacGDCTrain
 from src.configs import ConfigTrain
