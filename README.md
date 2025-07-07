@@ -12,13 +12,9 @@
 
 ![examples](assets/teaser.png)
 
-Generalizable depth completion enables the acquisition of dense metric depth maps for unseen environments, offering robust perception capabilities for various downstream tasks. However, training such models typically requires large-scale datasets with metric depth labels, which are often labor-intensive to collect.
-
 **PacGDC** is a label-efficient technique that enhances data diversity with minimal annotation effort for generalizable depth completion. It leverages novel insights into inherent ambiguities and consistencies in object shapes and positions during 2D-to-3D projection, allowing the synthesis of numerous pseudo geometries for the same visual scene. This process greatly broadens data coverage by manipulating scene scales of the corresponding depth maps.
 
 To leverage this property, we propose a new data synthesis pipeline that uses multiple depth foundation models as scale manipulators. These models robustly provide pseudo depth labels with varied scene scales in both local objects and global layouts, while ensuring projection consistency that contributes to generalization. To further diversify geometries, we incorporate interpolation and relocation strategies, as well as unlabeled images, extending the data coverage beyond the individual use of foundation models.
-
-Extensive experiments show that PacGDC achieves remarkable generalizability across multiple benchmarks, excelling in diverse scene semantics/scales and depth sparsity/patterns under both zero-shot and few-shot settings.
 
 ---
 
