@@ -2,7 +2,7 @@
 
 [**PacGDC: Label-Efficient Generalizable Depth Completion with Projection Ambiguity and Consistency**](https://ieeexplore.ieee.org/document/10786388)
 
-👨‍💻 **Haotian Wang, Aoran Xiao, Xiaoqin Zhang, Meng Yang, and Shijian Lu**
+**Haotian Wang, Aoran Xiao, Xiaoqin Zhang, Meng Yang, and Shijian Lu**
 
 *International Conference on Computer Vision (ICCV), October 2025*
 
@@ -33,7 +33,7 @@ To leverage this property, we propose a new data synthesis pipeline that uses mu
 
 ```
 └── Data_Train
-  ├── Labeled         # 📑 Labeled datasets
+  ├── Labeled         # Labeled datasets
   │   ├── Dataset1
   │   │   ├── rgb
   │   │   │   ├── file1.png
@@ -43,17 +43,17 @@ To leverage this property, we propose a new data synthesis pipeline that uses mu
   │   │   │   ├── file1.png
   │   │   │   ├── file2.png
   │   │   │   └── ...
-  │   │   ├── DA      # 🟦 DepthAnything Results
+  │   │   ├── DA      # DepthAnything Results
   │   │   │   ├── file1.png
   │   │   │   ├── file2.png
   │   │   │   └── ...
-  │   │   └── DepthPro # 🟩 DepthPro Results
+  │   │   └── DepthPro # DepthPro Results
   │   │       ├── file1.png
   │   │       ├── file2.png
   │   │       └── ...
   │   └── Dataset2
   │       └── ...
-  └── UnLabeled       # 🕶️ Unlabeled datasets
+  └── UnLabeled       # Unlabeled datasets
     ├── Dataset1
     │   ├── rgb
     │   │   └── ...
@@ -104,14 +104,14 @@ python train.py --model_type="L" --foundation_models="DA_DepthPro"
 ---
 
 ## 🧪 Testing
-1. 📥 Download and save the `Zero-Shot Pretrained Model` to `./Pretrained`
+1. Download and save the `Zero-Shot Pretrained Model` to `./Pretrained`
 
 | Pretrained Model                                                                                    | Model Type    | Drop rate |
 | --------------------------------------------------------------------------------------------------- |:-------:|:-------:|
 | [Zero-shot](https://drive.google.com/file/d/1QlZhWOFkF-Penz1fYz6gyE3AxzrFdT6j/view?usp=drive_link)    | SPNet-Large      | 0.5  |
 | [KITTI Finetuned (Online Leaderboard)](https://drive.google.com/file/d/1_9NnvnfeCcgAmIGnAXB8VwPlj1kz8hFD/view?usp=drive_link)   | SPNet-Large     | 0.8  |
 
-2. 📥 Download and unzip [Test Dataset (Ibims)](https://drive.google.com/file/d/10tME1cuV0PVxrFLauTlv5SdQbZLUfdGy/view?usp=drive_link) to `./Datasets/Data_Test`
+2. Download and unzip [Test Dataset (Ibims)](https://drive.google.com/file/d/10tME1cuV0PVxrFLauTlv5SdQbZLUfdGy/view?usp=drive_link) to `./Datasets/Data_Test`
 3. ▶️ Run `test.py`:
 
 ```bash
