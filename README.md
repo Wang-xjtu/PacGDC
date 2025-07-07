@@ -113,7 +113,7 @@ python train.py --model_type="L" --foundation_models="DA_DepthPro"
 | Pretrained Model                                                                                    | Model Type    | Drop rate |
 | --------------------------------------------------------------------------------------------------- |:-------:|:-------:|
 | [Zero-shot](https://drive.google.com/file/d/1QlZhWOFkF-Penz1fYz6gyE3AxzrFdT6j/view?usp=drive_link)    | SPNet-Large      | 0.5  |
-| [KITTI Finetuned (Online Leaderboard)](https://drive.google.com/file/d/1Ba-W3oX62lCjx5MvvGkn91LXP6SuCnV6/view?usp=drive_link)   | SPNet-Large     | 0.8  |
+| [KITTI Finetuned (Online Leaderboard)](https://drive.google.com/file/d/1_9NnvnfeCcgAmIGnAXB8VwPlj1kz8hFD/view?usp=drive_link)   | SPNet-Large     | 0.8  |
 
 2. 📥 Download and unzip [Test Dataset (Ibims)](https://drive.google.com/file/d/10tME1cuV0PVxrFLauTlv5SdQbZLUfdGy/view?usp=drive_link) to `./Datasets/Data_Test`
 3. ▶️ Run `test.py`:
