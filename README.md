@@ -4,6 +4,8 @@
 
 👨‍💻 **Haotian Wang, Aoran Xiao, Xiaoqin Zhang, Meng Yang, and Shijian Lu**
 
+*International Conference on Computer Vision (ICCV), October 2025*
+
 ---
 
 ## 📝 Abstract
