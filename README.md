@@ -22,8 +22,8 @@ Extensive experiments show that PacGDC achieves remarkable generalizability acro
 
 ## ⚙️ Requirements
 
-- Python > 3.9
-- PyTorch > 2.7
+- Python >= 3.9
+- PyTorch >= 2.7
 
 ---
 
