@@ -90,7 +90,7 @@ Extensive experiments show that PacGDC achieves remarkable generalizability acro
 > ⚠️ **Note:**  
 > - Hole maps should be stored in Uint8 format.  
 > - `valid pixels = 255`, `invalid pixels = 0`.  
-> - Example: [hole collected from HRWSI](https://drive.google.com/file/d/1iKJEWgd36ebEVbG-01_gDipYuCCs7ZQZ/view?usp=drive_link)
+> - Example: [Hole collected from HRWSI](https://drive.google.com/file/d/1iKJEWgd36ebEVbG-01_gDipYuCCs7ZQZ/view?usp=drive_link)
 
 ---
 
@@ -125,6 +125,12 @@ python train.py --model_type="L" --foundation_models="DA_DepthPro"
 # 2. Run test.py
 python test.py --ckpt_path="Pretrained/L_DA_DepthPro.pth" --max_depth=30
 ```
+
+---
+
+## 📈 Research Trajectory
+
+🟢 [G2-MonoDepth](https://github.com/Wang-xjtu/G2-MonoDepth) *(Framework)*  → 🔵 [SPNet](https://github.com/Wang-xjtu/SPNet) *(Network)*  → 🔴 [PacGDC](https://github.com/Wang-xjtu/PacGDC) *(Data)*
 
 ---
 
