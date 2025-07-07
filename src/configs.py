@@ -30,12 +30,10 @@ class ConfigTrain:
         self.wd = 0.05  # weight decay
         self.epochs = 100  # epochs numbers
         self.warmup_epochs = 1  # warmup epochs
-        # self.batch_size = int(192 / n_gpus)  # batch size of each gpu
-        self.batch_size = int(1 / n_gpus)  # batch size of each gpu
+        self.batch_size = int(192 / n_gpus)  # batch size of each gpu
 
         # multi GPU and AMP
-        # self.num_workers = int(24 / n_gpus)  # the number of workers
-        self.num_workers = int(1 / n_gpus)  # the number of workers
+        self.num_workers = int(24 / n_gpus)  # the number of workers
         self.amp = True  # automatic mixed precision (AMP)
 
         # feedback
