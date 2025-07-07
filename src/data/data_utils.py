@@ -384,7 +384,7 @@ def sample_uniform(dep) -> Tensor:
     return dep * random_point
 
 
-# fixed sfm point
+# sfm sampling from OMNI-DC implementation
 def sample_sfm(dep, rgb, pattern="sift") -> Tensor:
     channel, height, width = dep.shape
     rgb_np = (rgb.permute(1, 2, 0).numpy() * 255).astype(np.uint8)
