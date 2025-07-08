@@ -97,6 +97,7 @@ To leverage this property, we propose a new data synthesis pipeline that uses mu
 ```bash
 # model_type: ["T", "S", "B", "L"] referring to SPNet
 python train.py --model_type="L" --foundation_models="DA_DepthPro"
+# All configuration parameters are located in ".\src\configs.py" and can be customized as required.
 ```
 
 - The trained model will be saved in `./logs/models`
