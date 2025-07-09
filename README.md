@@ -105,9 +105,9 @@ python train.py --model_type="L" --foundation_models="DA_DepthPro"
 ---
 
 ## 🧪 Testing
-1. Download and save the `Zero-Shot Pretrained Model` to `./Pretrained`
+1. Download and save the `Zero-Shot Checkpoint` to `./Pretrained`
 
-| Pretrained Model                                                                                    | Model Type    | Drop rate | Foundation Models
+| Checkpoints                                                                                    | Model Type    | Drop rate | Foundation Models
 | --------------------------------------------------------------------------------------------------- |:-------:|:-------:|:-------:|
 | [Zero-shot](https://drive.google.com/file/d/1QlZhWOFkF-Penz1fYz6gyE3AxzrFdT6j/view?usp=drive_link)    | SPNet-Large      | 0.5  | DA, DepthPro|
 | [KITTI Finetuned (Online Leaderboard)](https://drive.google.com/file/d/1_9NnvnfeCcgAmIGnAXB8VwPlj1kz8hFD/view?usp=drive_link)   | SPNet-Large     | 0.8  | DA, DepthPro|
