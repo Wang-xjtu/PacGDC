@@ -76,9 +76,9 @@
   │   ├── file2.png
   │   └── ...
   └── Dataset2
-    ├── file1.png
-    ├── file2.png
-    └── ...
+      ├── file1.png
+      ├── file2.png
+      └── ...
 ```
 
 > ⚠️ **Note:**  
