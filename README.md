@@ -120,6 +120,8 @@ python train.py --model_type="L" --foundation_models="DA_DepthPro"
 # 2. Run test.py
 python test.py --ckpt_path="Pretrained/L_DA_DepthPro.pth" --max_depth=30
 ```
+> ⚠️ **Note:**  
+> - `KITTI Fine-tuned Checkpoints` are released for autonomous driving applications. This repository does not reimplement few-shot/full-shot fine-tuning, as existing public repositories like [LRRU](https://github.com/YufeiWang777/LRRU) and [CompletionFormer](https://github.com/youmi-zym/CompletionFormer) already provide effective solutions.
 
 ---
 
