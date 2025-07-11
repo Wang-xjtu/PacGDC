@@ -136,13 +136,11 @@ python test.py --ckpt_path="Pretrained/L_DA_DepthPro.pth" --max_depth=30
 If you find our work useful, please cite:
 
 ```bibtex
-@misc{wang2025pacgdc,
-      title={PacGDC: Label-Efficient Generalizable Depth Completion with Projection Ambiguity and Consistency}, 
-      author={Haotian Wang and Aoran Xiao and Xiaoqin Zhang and Meng Yang and Shijian Lu},
-      year={2025},
-      eprint={2507.07374},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2507.07374}, 
+@article{wang2025pacgdc,
+  title     = {PacGDC: Label-Efficient Generalizable Depth Completion with Projection Ambiguity and Consistency},
+  author    = {Wang, Haotian and Xiao, Aoran and Zhang, Xiaoqin and Yang, Meng and Lu, Shijian},
+  journal   = {arXiv preprint arXiv:2507.07374},
+  year      = {2025},
+  url       = {https://arxiv.org/abs/2507.07374}
 }
 ```
