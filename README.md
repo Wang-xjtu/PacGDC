@@ -1,8 +1,6 @@
 # 🚀 ICCV 2025: PacGDC
-**PacGDC: Label-Efficient Generalizable Depth Completion with Projection Ambiguity and Consistency**
-<!--
-[**PacGDC: Label-Efficient Generalizable Depth Completion with Projection Ambiguity and Consistency**](https://ieeexplore.ieee.org/document/10786388)
--->
+
+[**PacGDC: Label-Efficient Generalizable Depth Completion with Projection Ambiguity and Consistency**](https://arxiv.org/abs/2507.07374)
 
 **Haotian Wang, Aoran Xiao, Xiaoqin Zhang, Meng Yang, and Shijian Lu**
 
@@ -133,21 +131,18 @@ python test.py --ckpt_path="Pretrained/L_DA_DepthPro.pth" --max_depth=30
 
 ---
 
-<!--
 ## 📚 Citation
 
 If you find our work useful, please cite:
 
 ```bibtex
-@ARTICLE{10786388,
-  author={Wang, Haotian and Yang, Meng and Zheng, Xinhu and Hua, Gang},
-  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
-  title={Scale Propagation Network for Generalizable Depth Completion}, 
-  year={2025},
-  volume={47},
-  number={3},
-  pages={1908-1922},
-  doi={10.1109/TPAMI.2024.3513440}
+@misc{wang2025pacgdc,
+      title={PacGDC: Label-Efficient Generalizable Depth Completion with Projection Ambiguity and Consistency}, 
+      author={Haotian Wang and Aoran Xiao and Xiaoqin Zhang and Meng Yang and Shijian Lu},
+      year={2025},
+      eprint={2507.07374},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2507.07374}, 
 }
 ```
--->
