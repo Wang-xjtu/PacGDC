@@ -57,6 +57,9 @@ def parse_arguments():
 def demo(args):
     data_reader = DataReader(args.device)
     print("-----------building model-------------")
+    # hugging face loading
+    # net = CompletionNet.from_pretrained("Haotian-sx/PacGDC_large").to(args.device).eval()
+    # locally loading
     net = CompletionNet(str(args.ckpt_path.name)[0]).to(args.device).eval()
     net.load_state_dict(torch.load(args.ckpt_path)["network"])
     raw_dirs = ["10%", "1%", "0.1%"]
