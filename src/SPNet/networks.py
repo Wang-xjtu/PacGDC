@@ -1,9 +1,10 @@
 import torch
 import torch.nn as nn
 from .modules import Encoder, Decoder, get_completion_config
+from huggingface_hub import PyTorchModelHubMixin
 
 
-class CompletionNet(nn.Module):
+class CompletionNet(nn.Module, PyTorchModelHubMixin):
     def __init__(
         self,
         model_type="T",
