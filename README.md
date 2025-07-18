@@ -103,12 +103,23 @@ python train.py --model_type="L" --foundation_models="DA_DepthPro"
 ---
 
 ## 🧪 Testing
-1. Download and save the `Zero-Shot Checkpoint` to `./Pretrained`
+1. Download and locally save the `Zero-Shot Checkpoint` to `./Pretrained`
 
 | Checkpoints                                                                                    | Model Type    | Foundation Models | Drop rate
 | --------------------------------------------------------------------------------------------------- |:-------:|:-------:|:-------:|
-| [Zero-shot](https://drive.google.com/file/d/1QlZhWOFkF-Penz1fYz6gyE3AxzrFdT6j/view?usp=drive_link)    | SPNet-Large      | DA, DepthPro  | 0.5 |
-| [KITTI Finetuned (Online Leaderboard)](https://drive.google.com/file/d/1_9NnvnfeCcgAmIGnAXB8VwPlj1kz8hFD/view?usp=drive_link)   | SPNet-Large     | DA, DepthPro  | 0.8 |
+| [Zero-shot](https://huggingface.co/Haotian-sx/PacGDC_large/blob/main/L_DA_DepthPro.pth)    | SPNet-Large      | DA, DepthPro  | 0.5 |
+| [KITTI Finetuned (Online Leaderboard)](https://huggingface.co/Haotian-sx/PacGDC_large/blob/main/L_DA_DepthPro_KITTI.pt)   | SPNet-Large     | DA, DepthPro  | 0.8 |
+
+- If you want to load `Zero-Shot Checkpoint` using hugging face:
+``` python
+# update test.py as follows:
+
+# hugging face loading
+net = CompletionNet.from_pretrained("Haotian-sx/PacGDC_large")
+# locally loading
+# net = CompletionNet(str(args.ckpt_path.name)[0]).to(args.device).eval()
+# net.load_state_dict(torch.load(args.ckpt_path)["network"])
+```
 
 2. Download and unzip [Test Dataset (Ibims)](https://drive.google.com/file/d/10tME1cuV0PVxrFLauTlv5SdQbZLUfdGy/view?usp=drive_link) to `./Datasets/Data_Test`
 3. ▶️ Run `test.py`:
