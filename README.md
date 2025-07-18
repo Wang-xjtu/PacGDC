@@ -110,12 +110,12 @@ python train.py --model_type="L" --foundation_models="DA_DepthPro"
 | [Zero-shot](https://huggingface.co/Haotian-sx/PacGDC_large/blob/main/L_DA_DepthPro.pth)    | SPNet-Large      | DA, DepthPro  | 0.5 |
 | [KITTI Finetuned (Online Leaderboard)](https://huggingface.co/Haotian-sx/PacGDC_large/blob/main/L_DA_DepthPro_KITTI.pt)   | SPNet-Large     | DA, DepthPro  | 0.8 |
 
-- If you want to load `Zero-Shot Checkpoint` using hugging face:
+- If you want to load `Zero-Shot Checkpoint` using Hugging Face:
 ``` python
 # update test.py as follows:
 
 # hugging face loading
-net = CompletionNet.from_pretrained("Haotian-sx/PacGDC_large")
+net = CompletionNet.from_pretrained("Haotian-sx/PacGDC_large").to(args.device).eval()
 # locally loading
 # net = CompletionNet(str(args.ckpt_path.name)[0]).to(args.device).eval()
 # net.load_state_dict(torch.load(args.ckpt_path)["network"])
