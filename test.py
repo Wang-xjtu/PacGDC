@@ -93,6 +93,8 @@ def demo(args):
             # save img
             if args.save_results:
                 save_path = rgb_path.replace("/rgb/", "/result_" + raw_dir + "/")
+                # min max normalization for visualization
+                pred=(pred-pred.min())/(pred.max()-pred.min())
                 pred = data_reader.toint32(pred)
                 os.makedirs(str(Path(save_path).parent), exist_ok=True)
                 Image.fromarray(pred).save(save_path)
@@ -111,3 +113,4 @@ def demo(args):
 if __name__ == "__main__":
     args = parse_arguments()
     demo(args)
+
